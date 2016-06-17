@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Matthew's Portfolio</title>
+    <link rel="stylesheet" href="../css/styles.css">
+  </head>
+  <body>
+    <h1>Matthew Jelling, Web Developer</h1>
+    <div class=about-me>
+      <h2>About Me</h2>
+      <div class=about-me-par id=web-development>
+        <h3>Professionally</h3>
+        <p> Hey there!  Thanks for taking the time to view my portfolio.  I'm a full-stack web developer trained in building robust applications
+          using the Node.js as Ruby-on-rails frameworks. I currently code in ruby and javascript, I use jQuerry and AngularJS to expand the functionality of
+          javascript.  I also am proficient working with both sql and nosql database schemes. And I use a number of frameworks to get the most out of
+          the front-end styling of my applications. I'm always looking for new opportunities in web-development.  I'm currently open
+          to full-time work as a web developer in house for established companies, start-ups, and dev-shops. Also, if you
+          like my work, I accept offers freelance projects.
+        </p>
+      </div>
+      <div class=about-me-par id=personal>
+        <h3>Personally</h3>
+        <p> I was born and raised in New Jersey in the shadow of New York City in 1989. Upon completing
+          high school, I moved to Greenwhich Village and began a degree in politics, graduating with a
+          B.S. in 2015. Except for a year and a half spent in Israel, New York has been my home ever since.
+          I love the outdoors, but am eqully passionate about music, film, and reading (both fiction and non-fiction).
+          In highschool I was the captain of my track team and love running to this day.  I'm a huge believer
+          that one should never stop learning, and strive to constantly build upon my knowledge and skills.
+          Ask me about my favorite books and films, where I've traveled, or anything else.
+      </div>
+    </div>
+    <div id= "projects-container">
+      <h2>Past Work</h2>
+      <div class="projects" id="solo-projects">
+        <h3> My Solo Work</h3>
+        <div class="project" id="restaurant-app">
+          <h4>Restaurant Order Interface Application- Ruby on Rails</h4>
+          <span class="site-mock-up" onclick="location.href='https://serene-river-97746.herokuapp.com/'">
+            <img src="../images/Restaurant_screenshot.png"/>
+          </span>
+          <span class="app-description">
+            This application is a full Stack Ruby on Rails built order management system geared towards the restaurant industry. It uses interconnected data tables utilizing a SQL database scheme to manage orders and users. The app allows servers to manage partiy orders, and administrators to manage application accounts, and menu items.
+            <br>
+            <br>
+            <img id= "git_logo" onclick="location.href='https://github.com/mjelling/restaurant_app'" src="http://www.dataversity.net/wp-content/uploads/2014/09/GitHub_LogoMark304x200.png" alt="bubu"/>
+          </span>
+        </div>
+        <div class="project" id="simon">
+          <h4>Game: Simon- Front End Only App, Javascript (Vanilla)</h4>
+          <span class="site-mock-up" onclick="location.href='http://mjelling.github.io/Simon'">
+            <img src="../images/Simon_screenshot.png"/>
+          </span>
+          <span class="app-description">
+            This application is a responsive and randomized single page version of Simon utilizing only basic CSS and Javasript.
+            <br>
+            <br>
+            <img id= "git_logo" onclick="location.href='https://github.com/mjelling/Simon'" src="http://www.dataversity.net/wp-content/uploads/2014/09/GitHub_LogoMark304x200.png" alt="bubu"/>
+          </span>
+        </div>
+      </div>
+      <div class="projects" id="group-projects">
+        <h3>Work I Have Contributed To:</h3>
+        <div class="project" id="feel-trip">
+          <h4>Feel Trip- MEAN app built with node</h4>
+          <span class="site-mock-up" onclick="location.href='http://yahoo.com'">
+            <img src="../images/Feeltrip_screenshot.png" alt="bubu"/>
+          </span>
+          <span class="app-description">
+          This is a full-stack MEAN app built using Node.js.
+          It utilizes outside API’s: Twitter’s using a npm node, Spotify’s through json requests after user authentication, and weather requests processed through jSON.
+          A a noSql database was used to manage data. The application allows users to access twitter data and weather info by location and save past query results.
+            <br>
+            <br>
+            <img id= "git_logo" onclick="location.href='https://github.com/annalexc/feeltrip.git'" src="http://www.dataversity.net/wp-content/uploads/2014/09/GitHub_LogoMark304x200.png" alt="bubu"/>
+          </span>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

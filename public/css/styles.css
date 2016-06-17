@@ -1,0 +1,49 @@
+body {
+  background-color: lightgreen;
+  font-family: sans-serif;
+}
+img{
+  width: 300px;
+}
+h1{
+  padding-left: 1%;
+}
+h2{
+  padding-left: 3.5%
+}
+h3{
+  padding-left: 7.5%;
+}
+h4{
+  padding-left: 7.5%;
+}
+p{
+  padding-left: 7.5%;
+}
+#git_logo {
+  width: 50px;
+}
+.app-description{
+  width: 40%;
+  padding-right: 22.5%;
+  float: left;
+  min-height: 250px;
+  vertical-align: text-top;
+}
+.site-mock-up{
+  padding-left: 7.5%;
+  width: 30%;
+  float: left;
+  min-height: 250px;
+}
+.git-repo{
+  width: 30%;
+  float: left;
+  min-height: 250px;
+}
+div{
+  margin left: none;
+}
+.project{
+  padding-bottom: 1em;
+}
