@@ -28,7 +28,8 @@ p{
 }
 .app-description{
   width: 40%;
-  padding-right: 22.5%;
+  padding-right: 19.5%;
+  padding-left: 3%;
   float: left;
   min-height: 250px;
   vertical-align: text-top;
