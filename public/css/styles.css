@@ -1,6 +1,7 @@
 body {
   background-color: lightgreen;
   font-family: sans-serif;
+  padding: 20%;
 }
 img{
   width: 300px;
@@ -19,6 +20,8 @@ h4{
 }
 p{
   padding-left: 7.5%;
+  padding-right: 7.5%;
+  margin-right: 7.5%;
 }
 #git_logo {
   width: 50px;
@@ -45,5 +48,5 @@ div{
   margin left: none;
 }
 .project{
-  padding-bottom: 1em;
+  padding-bottom: -3em;
 }
