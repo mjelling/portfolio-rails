@@ -23,8 +23,16 @@ p{
   padding-right: 7.5%;
   margin-right: 7.5%;
 }
+
+a{
+  text-decoration: none;
+}
 #git_logo {
   width: 50px;
+}
+
+#contact{
+  text-align: center;
 }
 .app-description{
   width: 40%;
