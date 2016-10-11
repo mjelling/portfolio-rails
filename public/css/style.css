@@ -1,0 +1,169 @@
+body {
+
+  background-color: lightblue;
+  background-image: url('../../images/purple_pink_bg.png');
+  background-size: cover;
+  font-family: sans-serif;
+  margin-left: 0%;
+}
+img{
+  width: 300px;
+}
+h1{
+margin-left: 1em;
+color: #675FA8;
+}
+h2{
+  padding-left: 3.5%
+  padding-top: 1%;
+  padding-bottom: 1%;
+}
+h3{
+  padding-left: 7.5%;
+}
+h4{
+  padding-left: 7.5%;
+  margin-bottom: 1%;
+}
+p{
+  padding-left: 7.5%;
+  padding-right: 7.5%;
+  margin-right: 7.5%;
+}
+ul{
+  list-style-type: none;
+}
+li{
+  padding-top: 2.5%;
+}
+a{
+  text-decoration: none;
+}
+
+#git_logo {
+  width: 50px;
+}
+
+#contact{
+  margin-bottom: 3%;
+}
+#web-dev{
+  color: #574fA7;
+}
+/*#television{
+  background-image: url('../../images/purple_pink_bg.png');
+}*/
+#heading{
+  position: fixed;
+  top:0%;
+  left: 22%;
+  padding-top: 1%;
+  margin-right: 10%;
+  margin-left: -0.75%;
+  width: 90%;
+  height: 13%;
+  background-color: black;
+  border: 2px solid silver;
+}
+#info{
+  position: fixed;
+  bottom: 0%;
+  right: 32%;
+  padding-bottom: 2%;
+  border-bottom: 2%;
+  width: 67.58%;
+  height: 5%;
+  color: white;
+  background-color: black;
+  border: 2px solid silver;
+
+}
+#translucense{
+  position: fixed;
+  top: 0%;
+  left: 0%;
+  height: 13%;
+  width: 30%;
+
+  background-color: black;
+  opacity: .4
+}
+#table{
+  position: fixed;
+  right: -20%;
+  bottom: -8.3%;
+}
+#tbl{
+  height: 65%;
+  width: 65%;
+}
+#television{
+  position: fixed;
+  right: 3.8%;
+  bottom: 27%;
+  /*background-image: url('../../images/Simon_screenshot.png');
+  background-size: contain;*/
+}
+
+.menu-bar{
+  position: fixed;
+  top: 14.9%;
+  bottom: 0;
+  left: 0;
+  width: 30%;
+  height: 100;
+  color: white;
+  background-color: black;
+  padding-top: 2%;
+  padding-bottom: 0;
+  overflow-y: auto;
+  border: 2px solid silver;
+}
+.mb-about-me{
+  font-size: 30px;
+  padding-top: 19%;
+  color: #7573B2;
+}
+.mb-professionally, .mb-solo-work, .mb-all-apps, .mb-solo-work, .mb-group-work, .mb-nodejs, .mb-rails{
+  margin-top: 16px;
+  margin-bottom: 4px;
+}
+.mb-professionally, .mb-all-apps{
+  margin-top: 12px;
+}
+.mb-vinyl-hound, .mb-restaurant-interface, .mb-simon, .mb-old-old-address-book, .mb-bulletin-board, .mb-feel-trip{
+  margin-left: 40px;
+}
+
+
+.mb-work{
+  font-size: 30px;
+  padding-top: 3.5%;
+  color: #7573B2;
+}
+
+.app-description{
+  width: 40%;
+  padding-right: 19.5%;
+  padding-left: 3%;
+  float: left;
+  min-height: 250px;
+  vertical-align: text-top;
+}
+.site-mock-up{
+  padding-left: 7.5%;
+  width: 30%;
+  float: left;
+  min-height: 250px;
+}
+.git-repo{
+  width: 30%;
+  float: left;
+  min-height: 250px;
+}
+div{
+  margin-left: none;
+}
+.project{
+  padding-bottom: -3em;
+}
