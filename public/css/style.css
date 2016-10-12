@@ -58,24 +58,26 @@ a{
   top:0%;
   left: 22%;
   padding-top: 1%;
-  margin-right: 10%;
+  margin-right: 8%;
   margin-left: -0.75%;
   width: 90%;
-  height: 13%;
+  height: 12.9%;
   background-color: black;
-  border: 2px solid silver;
+  border-left: 4px solid silver;
+  border-bottom: 4px solid silver;
+  box-shadow: 22px 20px 18px -1px grey;
 }
 #info{
   position: fixed;
   bottom: 0%;
-  right: 32%;
+  right: 20%;
   padding-bottom: 2%;
-  border-bottom: 2%;
-  width: 67.58%;
+  width: 80.58%;
   height: 5%;
   color: white;
   background-color: black;
-  border: 2px solid silver;
+  border-top: 2px solid silver;
+  border-right: 2px solid silver;
 
 }
 #translucense{
@@ -88,6 +90,50 @@ a{
   background-color: black;
   opacity: .4
 }
+#head-shot-container{
+  position: fixed;
+  right: 0%;
+  bottom: 0%;
+  height: 30.5%;
+  width: 17.1%;
+  border: 4px solid black;
+  border-radius: 7%;
+  border-bottom-right-radius: 0%;
+  background-image: url('../../images/headshot_one.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-color: #f4ecea;
+}
+#title{
+  position: fixed;
+  top: 21%;
+  left: 33.4%;
+  width: 64.7%;
+  height: 10%;
+  border: 4px solid black;
+  border-radius: 3%;
+  padding-left: 2.3%;
+  background-color: lightblue;
+}
+#description{
+  position: fixed;
+  top: 34.7%;
+  left: 33.4%;
+  width: 33.2%;
+  height: 53%;
+  border: 4px solid black;
+  border-radius: 3%;
+  background-color: lightblue;
+}
+
+}
+#app-title{
+  margin-top: 4%;
+  margin-bottom: 4%;
+  margin-left: 4%;
+}
+
+
 #table{
   position: fixed;
   right: -20%;
@@ -97,6 +143,9 @@ a{
   height: 65%;
   width: 65%;
 }
+#mock-up{
+  height: 17%;
+}
 #television{
   position: fixed;
   right: 3.8%;
@@ -104,7 +153,9 @@ a{
   /*background-image: url('../../images/Simon_screenshot.png');
   background-size: contain;*/
 }
-
+.hidden{
+  visibility: hidden;
+}
 .menu-bar{
   position: fixed;
   top: 14.9%;
@@ -114,20 +165,23 @@ a{
   height: 100;
   color: white;
   background-color: black;
-  padding-top: 2%;
-  padding-bottom: 0;
+  padding-top: 1.2%;
+  padding-bottom: 8%;
   overflow-y: auto;
-  border: 2px solid silver;
+  border-top: 3px solid silver;
+  border-right: 3px solid silver;
+  box-shadow: 22px 11px 18px -1px grey;
 }
 .mb-about-me{
   font-size: 30px;
-  padding-top: 19%;
+  padding-top: 7.5%;
   color: #7573B2;
 }
 .mb-professionally, .mb-solo-work, .mb-all-apps, .mb-solo-work, .mb-group-work, .mb-nodejs, .mb-rails{
   margin-top: 16px;
   margin-bottom: 4px;
 }
+
 .mb-professionally, .mb-all-apps{
   margin-top: 12px;
 }
@@ -150,12 +204,26 @@ a{
   min-height: 250px;
   vertical-align: text-top;
 }
+
 .site-mock-up{
+  position: fixed;
+  right: 1%;
+  top: 34.3%;
+  height: 29.3%;
+  width: 29.1%;
+  border: 4px solid black;
+  border-radius: 12%;
+  background-image: url('../../images/Restaurant_screenshot.png');
+  background-size: contain;
+  background-repeat: repeat-y;
+
+}
+/*.site-mock-up{
   padding-left: 7.5%;
   width: 30%;
   float: left;
   min-height: 250px;
-}
+}*/
 .git-repo{
   width: 30%;
   float: left;
