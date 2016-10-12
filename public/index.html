@@ -15,57 +15,61 @@
     <div class=menu-bar>
       <ul>
       <li class=mb-about-me>about me</li>
-        <p class=mb-professionally>professionally</p>
-        <p class=mb-personally>personally</p>
+        <!-- <button class="btn" ng-click="showProfessionally()">professionally</button> -->
+        <p class=mb-professionally ng-click="showProfessionally()">professionally</p>
+        <p class=mb-personally ng-click="showPersonally()">personally</p>
       <li class=mb-work>work</li>
         <p class=mb-all-apps>all apps</p>
-          <li class=mb-vinyl-hound>vinyl hound</li>
+          <li class=mb-vinyl-hound ng-click="showVinylHound()">vinyl hound</li>
             <!-- <span class=mb-platform>nodejs application</span> -->
             <!-- insert tools used -->
-          <li class=mb-restaurant-interface>restaurant interface</li>
+          <li class=mb-restaurant-interface ng-click="showRestaurantInterface()">restaurant interface</li>
             <!-- <span class=mb-platform>ruby on rails application</span> -->
             <!-- insert tools used -->
-            <li class=mb-simon>simon clone</li>
+            <li class=mb-simon ng-click="showSimon()">simon clone</li>
             <!-- <span class=mb-platform>static app hosted on github io</span> -->
             <!-- insert tools used -->
-          <li class=mb-old-old-address-book>old old address book</li>
+          <li class=mb-old-old-address-book ng-click="showAddressBook()">old old address book</li>
             <!-- <span class=mb-platform>mini nodejs application></span> -->
             <!-- insert tools used -->
-          <li class=mb-bulletin-board>a community bulletin board</li>
+          <li class=mb-bulletin-board ng-click="showBulletinBoard()">a community bulletin board</li>
             <!-- <span class=platform>mini ruby on rails application</span> -->
             <!-- insert tools used -->
         <p class=mb-solo-work>solo work</p>
-          <li class=mb-vinyl-hound>vinyl hound</li>
+          <li class=mb-vinyl-hound ng-click="showVinylHound()">vinyl hound</li>
             <!-- <span class=mb-platform>nodejs application</span> -->
             <!-- insert tools used -->
-          <li class=mb-restaurant-interface>restaurant interface</li>
+          <li class=mb-restaurant-interface ng-click="showRestaurantInterface()">restaurant interface</li>
             <!-- <span class=mb-platform>ruby on rails application</span> -->
             <!-- insert tools used -->
-            <li class=mb-simon>simon clone</li>
+            <li class=mb-simon ng-click="showSimon()">simon clone</li>
             <!-- <span class=mb-platform>static app hosted on github io</span> -->
             <!-- insert tools used -->
-          <li class=mb-old-old-address-book>vinyl hound</li>
+          <li class=mb-old-old-address-book ng-click="showAddressBook()">vinyl hound</li>
             <!-- <span class=mb-platform>nodejs application></span> -->
             <!-- insert tools used -->
-          <li class=mb-bulletin-board>a community bulletin board</li>
+          <li class=mb-bulletin-board ng-click="showBulletinBoard()">a community bulletin board</li>
             <!-- <span class=mb-platform>mini ruby on rails application</span> -->
             <!-- insert tools used -->
+          <li class=mb-feel-trip ng-click="showPersonally()">feel trip</li>
+            <!-- <span class=mb-platform>ruby on rails application</span> -->
+            <!-- insert tools used -->
         <p class=mb-group-work>work in collaboration</p>
-          <li class=mb-feel-trip>feel trip</li>
+          <li class=mb-feel-trip ng-click="showBulletinBoard()">feel trip</li>
             <!-- <span class=mb-platform>ruby on rails application</span> -->
             <!-- insert tools used -->
         <p class=mb-nodejs>nodejs</p>
-          <li class=mb-vinyl-hound>vinyl hound</li>
+          <li class=mb-vinyl-hound ng-click="showVinylHound()">vinyl hound</li>
             <!-- <span class=mb-platform>nodejs application</span> -->
             <!-- insert tools used -->
-          <li class=mb-old-old-address-book>old old address book</li>
+          <li class=mb-old-old-address-book ng-click="showAddressBook()">old old address book</li>
             <!-- <span class=mb-platform>mini nodejs application></span> -->
             <!-- insert tools used -->
         <p class=mb-rails>ruby on rails</p>
-          <li class=mb-restaurant-interface>restaurant interface</li>
+          <li class=mb-restaurant-interface ng-click="showRestaurantInterface()">restaurant interface</li>
             <!-- <span class=mb-platform>ruby on rails application</span> -->
             <!-- insert tools used -->
-          <li class=mb-bulletin-board>a community bulletin board</li>
+          <li class=mb-bulletin-board ng-click="showBulletinBoard()">a community bulletin board</li>
             <!-- <span class=mb-platform>mini ruby on rails application</span> -->
             <!-- insert tools used -->
         </ul>
@@ -74,20 +78,109 @@
     <div id=head-shot-container>
     </div>
     <div id=presentation>
-      <div id=title>
-        <h2 id=app-title ng-show="visibilityProffessionally">About Me: Professionally~</h2>
+      <div  ng-show="visibilityProffessionally">
+        <div id=title>
+          <h2 id=app-title>About Me: Professionally~</h2>
+        </div>
+        <div id=description>
+          <p>Hey there!  Thanks for taking the time to view my portfolio.  I'm a full-stack web developer trained in building robust applications
+            using the Node.js and Ruby-on-rails frameworks. I currently code in ruby and javascript, and use jQuerry and AngularJS to expand javascript functionality.
+            I also am proficient working with both SQL and noSQL database schemes. I use a number of frameworks to get the most out of
+            the front-end styling of my applications. I'm always looking for new opportunities in web-development, and I'm currently open
+            to full-time work as a web developer in-house for established companies, start-ups, and dev-shops. Also, if you
+            like my work, I accept offers for freelance projects, and contract work.</p>
+        </div>
+        <span class=site-mock-up onclick="location.href='https://vinylhound.herokuapp.com'">
+          <!-- <img id=mock-up src="../images/vh_screenshot.png"/> -->
+        </span>
       </div>
-      <div id=description>
-        <p ng-show="visibilityProffessionally">Hey there!  Thanks for taking the time to view my portfolio.  I'm a full-stack web developer trained in building robust applications
-          using the Node.js and Ruby-on-rails frameworks. I currently code in ruby and javascript, and use jQuerry and AngularJS to expand javascript functionality.
-          I also am proficient working with both SQL and noSQL database schemes. I use a number of frameworks to get the most out of
-          the front-end styling of my applications. I'm always looking for new opportunities in web-development, and I'm currently open
-          to full-time work as a web developer in-house for established companies, start-ups, and dev-shops. Also, if you
-          like my work, I accept offers for freelance projects, and contract work.</p>
+      <div  ng-show="visibilityPersonally">
+        <div id=title>
+          <h2 id=app-title>About Me: Personally~</h2>
+        </div>
+        <div id=description>
+          <p>I was born and raised in New Jersey in the shadow of New York City in 1989. Upon completing
+            high school, I moved to Greenwhich Village to attend NYU beginning a degree in politics, and graduating with a
+            B.S. in 2015. Except for a year and a half spent in Israel, New York has been my home ever since.
+            I love the outdoors, but am eqully passionate about music, film, and reading (both fiction and non-fiction).
+            In highschool I was the captain of my track team and love running to this day.  I'm a huge believer
+            that one should never stop learning, and strive to constantly build upon my knowledge and skills.
+            Ask me about my favorite books and films, where I've traveled, or anything else.</p>
+        </div>
+        <span class=site-mock-up onclick="location.href='https://vinylhound.herokuapp.com'">
+          <!-- <img id=mock-up src="../images/vh_screenshot.png"/> -->
+        </span>
       </div>
-      <span ng-show="visibilityProffessionally" class=site-mock-up onclick="location.href='https://vinylhound.herokuapp.com'">
-        <!-- <img id=mock-up src="../images/vh_screenshot.png"/> -->
-      </span>
+        <div ng-show="visibilityVinylHound">
+          <div id=title>
+            <h2 id=app-title>Vinyl Hound- NODE.js~</h2>
+          </div>
+          <div id=description>
+            <p>  This application is a full-stack NODEjs app built as an a place to virtualy store your record collection, and view recommendations derived from it. A noSQL database is used to manage multipl APIs. AngularJS was employed in order to present data, and maximize the efficiency of the app's single-page design. Log-in credentials are username: sara password: a.
+              Ask me about my favorite books and films, where I've traveled, or anything else.</p>
+          </div>
+          <span class=site-mock-up onclick="location.href='https://vinylhound.herokuapp.com'">
+            <!-- <img id=mock-up src="../images/vh_screenshot.png"/> -->
+          </span>
+        </div>
+        <div ng-show="visibilityRestaurantInterface">
+          <div id=title>
+            <h2 id=app-title>Restaurant Order Interface Application- Ruby on Rails~</h2>
+          </div>
+          <div id=description>
+            <p>   This application is a full-stack Ruby on Rails app built as an order management system geared towards the restaurant industry. It uses interconnected data tables utilizing a SQL database scheme to manage orders and users. The app allows servers to manage party orders, and administrators to manage application accounts and menu items. Log in credentials are user: matt password: a.</p>
+          </div>
+          <span class=site-mock-up onclick="location.href='https://vinylhound.herokuapp.com'">
+            <!-- <img id=mock-up src="../images/vh_screenshot.png"/> -->
+          </span>
+        </div>
+        <div ng-show="visibilitySimon">
+          <div id=title>
+            <h2 id=app-title>Game: Simon Clone- Front end only app, Javascript (Vanilla)~</h2>
+          </div>
+          <div id=description>
+            <p>   This application is a responsive and randomized single page version of Simon utilizing only basic CSS and Javasript.</p>
+          </div>
+          <span class=site-mock-up onclick="location.href='https://vinylhound.herokuapp.com'">
+            <!-- <img id=mock-up src="../images/vh_screenshot.png"/> -->
+          </span>
+        </div>
+        <div ng-show="visibilityAddressBook">
+          <div id=title>
+            <h2 id=app-title>Old Old Address Book- NODE.js~</h2>
+          </div>
+          <div id=description>
+            <p>This application is a full-stack NODE.js app built as an address book. A noSQL database is used to manage entries on the server side.  Log-in credentials are username: matt password: a.</p>
+          </div>
+          <span class=site-mock-up onclick="location.href='https://vinylhound.herokuapp.com'">
+            <!-- <img id=mock-up src="../images/vh_screenshot.png"/> -->
+          </span>
+        </div>
+        <div ng-show="visibilityBulletinBoard">
+          <div id=title>
+            <h2 id=app-title>A Community Bulletin Board- Ruby on Rails~</h2>
+          </div>
+          <div id=description>
+            <p>This application is a full-stack Ruby on Rails app built as a virtual bulletin board. A noSQL database is used to manage posts on the server side.</p>
+          </div>
+          <span class=site-mock-up onclick="location.href='https://vinylhound.herokuapp.com'">
+            <!-- <img id=mock-up src="../images/vh_screenshot.png"/> -->
+          </span>
+        </div>
+        <div ng-show="visibilityFeelTrip">
+          <div id=title>
+            <h2 id=app-title>Feel Trip- MEAN app built with nodeJS~</h2>
+          </div>
+          <div id=description>
+            <p>This is a full-stack MEAN app built using Node.js.
+            It utilizes outside API’s: Twitter’s using a npm node, Spotify’s through jSON requests after user authentication, and weather requests also processed through jSON.
+            A noSql database was used to manage data. The application allows users to access Twitter data and weather info by location and save past query results.</p>
+          </div>
+          <span class=site-mock-up onclick="location.href='https://vinylhound.herokuapp.com'">
+            <!-- <img id=mock-up src="../images/vh_screenshot.png"/> -->
+          </span>
+        </div>
+
     </div>
     <div id=info>
       <span id=contact>
